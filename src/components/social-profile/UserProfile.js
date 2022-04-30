@@ -1,11 +1,14 @@
 import PropTypes from 'prop-types';
 import s from './Profile.module.css';
 
+const DEFAULT_AVATAR =
+  'https://cdn-icons-png.flaticon.com/512/1077/1077012.png';
+
 function UserProfile({
   username,
   tag,
   location,
-  avatar = 'https://cdn-icons-png.flaticon.com/512/1077/1077012.png',
+  avatar = DEFAULT_AVATAR,
   stats,
 }) {
   return (
